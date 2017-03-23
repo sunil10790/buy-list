@@ -29,7 +29,12 @@
                     </tr>
                 </thead>
                 <tbody>
-
+                    <tr *ngFor='let product of products'>
+                        <td></td>
+                        <td> {{ product.productName }} </td>
+                        <td> {{ product.price }} </td>
+                        <td> {{ product.desperationLevel }} </td>
+                    </tr>
                 </tbody>
             </table>
         </div>

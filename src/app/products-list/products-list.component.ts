@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'bl-products',
-    templateUrl: 'app/products-list/products-list.component.html'
+    templateUrl: 'app/products-list/products-list.component.html',
+    styleUrls: ['app/products-list/products-list.component.css']
 })
 export class ProductsListComponent {
     pageTitle: string = 'Product List';
@@ -13,7 +14,7 @@ export class ProductsListComponent {
             "description": "Aggressive throwback styling taken to a place altogether new. No need to shine this machine. Just get on and tear up the nearest street.",
             "price": 800000,
             "desperationLevel": 9.5,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png"
+            "imageUrl": "http://www.totalmotorcycle.com/motorcycles/2017/2017-Harley-Davidson-Iron-883d.jpg"
         },
         {
             "productId": 2,
@@ -21,7 +22,7 @@ export class ProductsListComponent {
             "description": "Bansuri Flute",
             "price": 3000,
             "desperationLevel": 6,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
+            "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/31vAp3OoZ2L._SX300_.jpg"
         }
     ]
 }

@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class ProductsListComponent {
     pageTitle: string = 'Product List';
+    showImage: boolean = false;
     products: any[] = [
         {
             "productId": 1,
@@ -24,5 +25,9 @@ export class ProductsListComponent {
             "desperationLevel": 6,
             "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/31vAp3OoZ2L._SX300_.jpg"
         }
-    ]
+    ];
+
+    toggleImage() : void {
+        this.showImage = !this.showImage;
+    };
 }

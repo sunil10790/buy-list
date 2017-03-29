@@ -34,7 +34,7 @@
                             <img class='productImage' [src]='product.imageUrl' [title]='product.productName' *ngIf='showImage'>
                         </td>
                         <td> {{ product.productName }} </td>
-                        <td> {{ product.price }} </td>
+                        <td> {{ product.price | currency:'INR':true:'1.2-2' }} </td>
                         <td> {{ product.desperationLevel }} </td>
                     </tr>
                 </tbody>

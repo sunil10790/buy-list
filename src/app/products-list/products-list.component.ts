@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { IProduct } from './product';
+
 @Component({
     selector: 'bl-products',
     templateUrl: 'app/products-list/products-list.component.html',
@@ -9,7 +11,7 @@ export class ProductsListComponent {
     pageTitle: string = 'Product List';
     showImage: boolean = false;
     filterText: string = '';
-    products: any[] = [
+    products: IProduct[] = [
         {
             "productId": 1,
             "productName": "Harley Davidson IRON 883",
